@@ -26,8 +26,11 @@
 // rotate 2 steps to the right: [3,99,-1,-100]
 
 var rotate = function(nums, k) {
-  for (let i = 0; i < k; i++) {
-    nums = nums + nums.shift();
+  let i = 0;
+  while (i < k) {
+      let item = nums.pop();
+      nums.unshift(item);
+      i++;
   }
   return nums;
 };
