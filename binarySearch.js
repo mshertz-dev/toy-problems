@@ -6,7 +6,6 @@
 @return {number}
  */
 var search = function(nums, target) {
-  debugger;
 let start = 0;
 let end = nums.length - 1;
 let midpoint = Math.floor((end + start) / 2);
